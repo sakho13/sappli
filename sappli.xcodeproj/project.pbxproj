@@ -11,6 +11,8 @@
 		1B0240732AA6DC8B00EE0447 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B0240722AA6DC8B00EE0447 /* ContentView.swift */; };
 		1B0240752AA6DC8F00EE0447 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1B0240742AA6DC8F00EE0447 /* Assets.xcassets */; };
 		1B0240782AA6DC8F00EE0447 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1B0240772AA6DC8F00EE0447 /* Preview Assets.xcassets */; };
+		1B0240802AA6DCDF00EE0447 /* SwiftFormat in Frameworks */ = {isa = PBXBuildFile; productRef = 1B02407F2AA6DCDF00EE0447 /* SwiftFormat */; };
+		1B0240822AA6DD9800EE0447 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 1B0240812AA6DD9800EE0447 /* .gitignore */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,7 @@
 		1B0240722AA6DC8B00EE0447 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		1B0240742AA6DC8F00EE0447 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1B0240772AA6DC8F00EE0447 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		1B0240812AA6DD9800EE0447 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +29,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1B0240802AA6DCDF00EE0447 /* SwiftFormat in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -35,8 +39,9 @@
 		1B0240642AA6DC8B00EE0447 = {
 			isa = PBXGroup;
 			children = (
-				1B02406F2AA6DC8B00EE0447 /* sappli */,
+				1B0240812AA6DD9800EE0447 /* .gitignore */,
 				1B02406E2AA6DC8B00EE0447 /* Products */,
+				1B02406F2AA6DC8B00EE0447 /* sappli */,
 			);
 			sourceTree = "<group>";
 		};
@@ -83,6 +88,9 @@
 			dependencies = (
 			);
 			name = sappli;
+			packageProductDependencies = (
+				1B02407F2AA6DCDF00EE0447 /* SwiftFormat */,
+			);
 			productName = sappli;
 			productReference = 1B02406D2AA6DC8B00EE0447 /* sappli.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +119,9 @@
 				Base,
 			);
 			mainGroup = 1B0240642AA6DC8B00EE0447;
+			packageReferences = (
+				1B02407E2AA6DCDF00EE0447 /* XCRemoteSwiftPackageReference "SwiftFormat" */,
+			);
 			productRefGroup = 1B02406E2AA6DC8B00EE0447 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -126,6 +137,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1B0240782AA6DC8F00EE0447 /* Preview Assets.xcassets in Resources */,
+				1B0240822AA6DD9800EE0447 /* .gitignore in Resources */,
 				1B0240752AA6DC8F00EE0447 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -337,6 +349,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		1B02407E2AA6DCDF00EE0447 /* XCRemoteSwiftPackageReference "SwiftFormat" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/nicklockwood/SwiftFormat";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.52.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		1B02407F2AA6DCDF00EE0447 /* SwiftFormat */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1B02407E2AA6DCDF00EE0447 /* XCRemoteSwiftPackageReference "SwiftFormat" */;
+			productName = SwiftFormat;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 1B0240652AA6DC8B00EE0447 /* Project object */;
 }
