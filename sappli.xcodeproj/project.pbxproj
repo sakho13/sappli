@@ -13,6 +13,16 @@
 		1B0240782AA6DC8F00EE0447 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1B0240772AA6DC8F00EE0447 /* Preview Assets.xcassets */; };
 		1B0240802AA6DCDF00EE0447 /* SwiftFormat in Frameworks */ = {isa = PBXBuildFile; productRef = 1B02407F2AA6DCDF00EE0447 /* SwiftFormat */; };
 		1B0240822AA6DD9800EE0447 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 1B0240812AA6DD9800EE0447 /* .gitignore */; };
+		1B0240852AA6E4DC00EE0447 /* SupplimentListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B0240842AA6E4DC00EE0447 /* SupplimentListView.swift */; };
+		1B0240872AA6E51700EE0447 /* GroupListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B0240862AA6E51700EE0447 /* GroupListView.swift */; };
+		1B0240892AA6E52E00EE0447 /* AllSupplimentListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B0240882AA6E52E00EE0447 /* AllSupplimentListView.swift */; };
+		1B02408C2AA6E7C400EE0447 /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B02408B2AA6E7C400EE0447 /* ContentViewModel.swift */; };
+		1B02408F2AA70AF000EE0447 /* Suppliment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B02408E2AA70AF000EE0447 /* Suppliment.swift */; };
+		1B0240912AA70BCD00EE0447 /* SupplimentListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B0240902AA70BCD00EE0447 /* SupplimentListViewModel.swift */; };
+		1B0240942AA70C9900EE0447 /* DataStorageHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B0240932AA70C9900EE0447 /* DataStorageHelper.swift */; };
+		1B0240972AA7220B00EE0447 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 1B0240962AA7220B00EE0447 /* Realm */; };
+		1B0240992AA7220B00EE0447 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 1B0240982AA7220B00EE0447 /* RealmSwift */; };
+		1B02409B2AA7228A00EE0447 /* Group.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B02409A2AA7228A00EE0447 /* Group.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +32,14 @@
 		1B0240742AA6DC8F00EE0447 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1B0240772AA6DC8F00EE0447 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		1B0240812AA6DD9800EE0447 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		1B0240842AA6E4DC00EE0447 /* SupplimentListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupplimentListView.swift; sourceTree = "<group>"; };
+		1B0240862AA6E51700EE0447 /* GroupListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupListView.swift; sourceTree = "<group>"; };
+		1B0240882AA6E52E00EE0447 /* AllSupplimentListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllSupplimentListView.swift; sourceTree = "<group>"; };
+		1B02408B2AA6E7C400EE0447 /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
+		1B02408E2AA70AF000EE0447 /* Suppliment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Suppliment.swift; sourceTree = "<group>"; };
+		1B0240902AA70BCD00EE0447 /* SupplimentListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupplimentListViewModel.swift; sourceTree = "<group>"; };
+		1B0240932AA70C9900EE0447 /* DataStorageHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStorageHelper.swift; sourceTree = "<group>"; };
+		1B02409A2AA7228A00EE0447 /* Group.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Group.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +47,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1B0240992AA7220B00EE0447 /* RealmSwift in Frameworks */,
+				1B0240972AA7220B00EE0447 /* Realm in Frameworks */,
 				1B0240802AA6DCDF00EE0447 /* SwiftFormat in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -56,10 +76,14 @@
 		1B02406F2AA6DC8B00EE0447 /* sappli */ = {
 			isa = PBXGroup;
 			children = (
-				1B0240702AA6DC8B00EE0447 /* sappliApp.swift */,
-				1B0240722AA6DC8B00EE0447 /* ContentView.swift */,
+				1B02409C2AA72C5700EE0447 /* Components */,
 				1B0240742AA6DC8F00EE0447 /* Assets.xcassets */,
+				1B0240922AA70C8500EE0447 /* Helpers */,
+				1B02408D2AA70ABE00EE0447 /* Models */,
 				1B0240762AA6DC8F00EE0447 /* Preview Content */,
+				1B0240702AA6DC8B00EE0447 /* sappliApp.swift */,
+				1B02408A2AA6E7AA00EE0447 /* ViewModels */,
+				1B0240832AA6DF0B00EE0447 /* Views */,
 			);
 			path = sappli;
 			sourceTree = "<group>";
@@ -70,6 +94,50 @@
 				1B0240772AA6DC8F00EE0447 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		1B0240832AA6DF0B00EE0447 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				1B0240722AA6DC8B00EE0447 /* ContentView.swift */,
+				1B0240842AA6E4DC00EE0447 /* SupplimentListView.swift */,
+				1B0240862AA6E51700EE0447 /* GroupListView.swift */,
+				1B0240882AA6E52E00EE0447 /* AllSupplimentListView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		1B02408A2AA6E7AA00EE0447 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				1B02408B2AA6E7C400EE0447 /* ContentViewModel.swift */,
+				1B0240902AA70BCD00EE0447 /* SupplimentListViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		1B02408D2AA70ABE00EE0447 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				1B02408E2AA70AF000EE0447 /* Suppliment.swift */,
+				1B02409A2AA7228A00EE0447 /* Group.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		1B0240922AA70C8500EE0447 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				1B0240932AA70C9900EE0447 /* DataStorageHelper.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		1B02409C2AA72C5700EE0447 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -90,6 +158,8 @@
 			name = sappli;
 			packageProductDependencies = (
 				1B02407F2AA6DCDF00EE0447 /* SwiftFormat */,
+				1B0240962AA7220B00EE0447 /* Realm */,
+				1B0240982AA7220B00EE0447 /* RealmSwift */,
 			);
 			productName = sappli;
 			productReference = 1B02406D2AA6DC8B00EE0447 /* sappli.app */;
@@ -121,6 +191,7 @@
 			mainGroup = 1B0240642AA6DC8B00EE0447;
 			packageReferences = (
 				1B02407E2AA6DCDF00EE0447 /* XCRemoteSwiftPackageReference "SwiftFormat" */,
+				1B0240952AA7220B00EE0447 /* XCRemoteSwiftPackageReference "realm-swift" */,
 			);
 			productRefGroup = 1B02406E2AA6DC8B00EE0447 /* Products */;
 			projectDirPath = "";
@@ -149,8 +220,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1B02408F2AA70AF000EE0447 /* Suppliment.swift in Sources */,
+				1B0240912AA70BCD00EE0447 /* SupplimentListViewModel.swift in Sources */,
+				1B0240942AA70C9900EE0447 /* DataStorageHelper.swift in Sources */,
+				1B02409B2AA7228A00EE0447 /* Group.swift in Sources */,
 				1B0240732AA6DC8B00EE0447 /* ContentView.swift in Sources */,
+				1B0240852AA6E4DC00EE0447 /* SupplimentListView.swift in Sources */,
+				1B02408C2AA6E7C400EE0447 /* ContentViewModel.swift in Sources */,
 				1B0240712AA6DC8B00EE0447 /* sappliApp.swift in Sources */,
+				1B0240872AA6E51700EE0447 /* GroupListView.swift in Sources */,
+				1B0240892AA6E52E00EE0447 /* AllSupplimentListView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -359,6 +438,14 @@
 				minimumVersion = 0.52.3;
 			};
 		};
+		1B0240952AA7220B00EE0447 /* XCRemoteSwiftPackageReference "realm-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.42.1;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -366,6 +453,16 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 1B02407E2AA6DCDF00EE0447 /* XCRemoteSwiftPackageReference "SwiftFormat" */;
 			productName = SwiftFormat;
+		};
+		1B0240962AA7220B00EE0447 /* Realm */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1B0240952AA7220B00EE0447 /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = Realm;
+		};
+		1B0240982AA7220B00EE0447 /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1B0240952AA7220B00EE0447 /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = RealmSwift;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
